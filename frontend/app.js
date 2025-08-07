@@ -41,7 +41,7 @@ claveInput.addEventListener('input', actualizarEstado);
 
 // Click en instalar (petición al backend)
 btnInstalar.addEventListener('click', function () {
-  fetch('http://localhost:3000/api/get-apk-url', {   // Cambia el dominio si despliegas en otro lado
+  fetch('https://paginavecinoqr.onrender.com/', {   // Cambia el dominio si despliegas en otro lado
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ password: claveInput.value })
