@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VecinoQR - Control de Acceso Inteligente</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <div class="bg-anim"></div>
+  <header>
+    <img src="icon.png" class="logo" alt="Logo VecinoQR"/>
+    <h1>VecinoQR</h1>
+    <p>
+      Controla el acceso a tu comunidad de forma eficiente y segura.<br>
+      Gestiona visitantes, residentes y guardias desde tu móvil con códigos QR inteligentes.
+    </p>
+  </header>
+  <div class="container">
+    <div class="content glass">
+      <section>
+        <h2>¿Qué es VecinoQR?</h2>
+        <p>
+          VecinoQR es una app móvil para controlar accesos en comunidades y residenciales con códigos QR únicos y personalizados. Seguridad, rapidez y comodidad en la palma de tu mano.
+        </p>
+      </section>
+      <section>
+        <h2>¿Cómo funciona?</h2>
+        <ul>
+          <li><b>Inicio de sesión:</b> Acceso seguro para vecinos, guardias y administradores.</li>
+          <li><b>Registro seguro:</b> Solo se permite un Administrador; registros de Vecinos y Guardias requieren aprobación.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Funciones principales</h2>
+        <ul>
+          <li><b>Vecino:</b>
+            <ul>
+              <li>Genera tu QR personal (30 min de validez).</li>
+              <li>Solicita y comparte QR para visitas (24 h de validez).</li>
+              <li>Administra tu cuenta y cierra sesión.</li>
+            </ul>
+          </li>
+          <li><b>Guardia:</b>
+            <ul>
+              <li>Escanea QR de vecinos y visitantes.</li>
+              <li>Aprueba o rechaza accesos.</li>
+              <li>Monitorea historial de accesos.</li>
+            </ul>
+          </li>
+          <li><b>Administrador:</b>
+            <ul>
+              <li>Aprueba o rechaza registros.</li>
+              <li>Desactiva o bloquea cuentas.</li>
+              <li>Edita credenciales.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>¿Por qué elegir VecinoQR?</h2>
+        <ul>
+          <li>Mayor seguridad para tu comunidad.</li>
+          <li>Control total y registro digital de accesos.</li>
+          <li>Facilidad para compartir y verificar permisos.</li>
+        </ul>
+      </section>
+
+      <div class="form-instalar">
+        <input type="password" id="clave" placeholder="Escribe la contraseña para instalar" autocomplete="off" />
+        <button class="install-btn" id="btn-instalar" disabled>Instalar App</button>
+        <div id="msg" class="msg"></div>
+        <div id="only-android" class="only-android"></div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span>Desarrollado por Luis Felipe Zúniga L.</span>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
